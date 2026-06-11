@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build Modern Digital Experiences with our professional web development services. We create responsive, modern websites and digital solutions for businesses worldwide.">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Digital Solutions - Build Modern Web Experiences">
+    <meta property="og:description" content="Professional web development, mobile apps, UI/UX design, and digital solutions for modern businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <title>Digital Solutions - Modern Web Development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">DS</span>
+                <span class="logo-text">Digital Solutions</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Build Modern Digital Experiences</h1>
+                <p class="hero-subtitle">
+                    We create stunning, responsive websites and digital solutions that help your business grow 
+                    and engage with customers in meaningful ways.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Get Started</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('services')">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#e0e7ff"/>
+                        <rect x="50" y="50" width="300" height="200" rx="10" fill="#6366f1" opacity="0.1"/>
+                        <circle cx="200" cy="150" r="60" fill="#6366f1" opacity="0.2"/>
+                        <path d="M 100 100 Q 200 50 300 100" stroke="#6366f1" stroke-width="2" fill="none" opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Learn more about our mission and expertise</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>
+                        We are a team of passionate developers and designers dedicated to creating exceptional digital 
+                        experiences. With over 5 years of experience in the industry, we've helped businesses of all sizes 
+                        transform their digital presence.
+                    </p>
+                    <p>
+                        Our mission is to bridge the gap between innovative design and powerful functionality, 
+                        delivering solutions that exceed expectations and drive real business results.
+                    </p>
+                    
+                    <div class="about-highlight">
+                        <h4>Our Vision</h4>
+                        <p>
+                            To be the leading provider of modern digital solutions, empowering businesses to thrive 
+                            in the digital economy through cutting-edge technology and exceptional service.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive digital solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <!-- Web Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="10" width="80" height="70" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="10" y1="30" x2="90" y2="30" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="2" fill="currentColor"/>
+                            <circle cx="30" cy="20" r="2" fill="currentColor"/>
+                            <circle cx="40" cy="20" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Build robust and scalable web applications using modern technologies and best practices 
+                        for optimal performance and user experience.
+                    </p>
+                </div>
+
+                <!-- Mobile Apps -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="10" width="50" height="80" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="30" y="15" width="40" height="60" fill="none" stroke="currentColor" stroke-width="1"/>
+                            <circle cx="50" cy="80" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Mobile Apps</h3>
+                    <p class="service-description">
+                        Create engaging and intuitive mobile applications that work seamlessly across iOS and Android 
+                        platforms for maximum reach.
+                    </p>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 20 40 L 50 10 L 80 40 L 70 40 L 70 80 L 30 80 L 30 40 Z" 
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <circle cx="50" cy="60" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Design beautiful and user-centric interfaces that engage users and drive conversions through 
+                        thoughtful interaction design.
+                    </p>
+                </div>
+
+                <!-- SEO Optimization -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M 55 55 L 75 75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <text x="35" y="42" font-size="16" text-anchor="middle" fill="currentColor">SEO</text>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">
+                        Improve your online visibility and organic search rankings through strategic SEO optimization 
+                        and data-driven marketing techniques.
+                    </p>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 25 60 Q 20 50 25 40 Q 35 30 45 35 Q 55 25 65 35 Q 75 30 75 45 Q 85 50 80 60 Z" 
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <line x1="50" y1="45" x2="50" y2="60" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Cloud Solutions</h3>
+                    <p class="service-description">
+                        Deploy and manage scalable cloud infrastructure that ensures high availability, security, 
+                        and cost-effective operations for your business.
+                    </p>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M 35 45 Q 35 35 50 35 Q 65 35 65 45" 
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="40" cy="45" r="2" fill="currentColor"/>
+                            <circle cx="60" cy="45" r="2" fill="currentColor"/>
+                            <path d="M 40 60 Q 50 70 60 60" 
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Technical Support</h3>
+                    <p class="service-description">
+                        Receive dedicated technical support and maintenance services to keep your digital solutions 
+                        running smoothly 24/7.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our team</p>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            placeholder="Your full name"
+                            required
+                            aria-label="Full Name"
+                        >
+                        <span class="error-message" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="your.email@example.com"
+                            required
+                            aria-label="Email Address"
+                        >
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="+1 (555) 000-0000"
+                            required
+                            aria-label="Phone Number"
+                        >
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="What is this about?"
+                            required
+                            aria-label="Subject"
+                        >
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Tell us more about your project..."
+                            rows="6"
+                            required
+                            aria-label="Message"
+                        ></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    <div class="success-message" id="successMessage">
+                        ✓ Thank you! We'll get back to you soon.
+                    </div>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>contact@digitalsolutions.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>123 Tech Street, San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9am - 6pm PST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">DS</span>
+                        <span class="logo-text">Digital Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Creating modern digital experiences that drive business growth and innovation.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⚙</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Solutions. All rights reserved.</p>
+                <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">
+                    <span>↑</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
